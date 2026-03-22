@@ -77,3 +77,25 @@
 - Solution → combine them via feature engineering
 - Example: total_rooms, total_bedrooms, 
   population, households all measure district size
+
+  ## 13. Data Leakage
+- Happens when test data influences training process
+- Example: calculating mean on full dataset before splitting
+  → mean includes test data → model has "seen" test data
+- Prevention: ALWAYS split first, then clean
+- Makes evaluation results unreliable/fake
+
+## 14. Correct ML Project Sequence
+1. EDA on full data
+2. Train Test Split
+3. EDA on train data only
+4. Data Cleaning (via Pipeline)
+5. Feature Engineering
+6. Encoding
+7. Feature Scaling
+8. Build Pipeline
+9. Train Model
+10. Cross Validation
+11. Hyperparameter Tuning
+12. Final Test Set Evaluation (once!)
+13. Save Model

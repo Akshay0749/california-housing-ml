@@ -78,7 +78,7 @@
 - Example: total_rooms, total_bedrooms, 
   population, households all measure district size
 
-  ## 13. Data Leakage
+## 13. Data Leakage
 - Happens when test data influences training process
 - Example: calculating mean on full dataset before splitting
   → mean includes test data → model has "seen" test data
